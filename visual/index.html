@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>FORMULARIO</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <main>
+    <br>
+    <div class="container">
+      <center><h1>FORMULARIO DE INGRESO DE DATOS</h1></center>
+        <div class="card">
+            <div class="card-header">
+              <center><h3>ESTUDIANTE</h3> </center>
+            </div>
+            <hr>
+            <div class="card-body">
+              <div class="mb-3">
+                <label for="nameStudent" class="form-label">Nombre</label>
+                <input type="text" name="name" id="nameStudent" class="form-control" placeholder="Nombre del Estudiante" aria-describedby="helpId">
+                <label for="idStudent" class="form-label">Cédula</label>
+                <input type="text" name="id" id="idStudent" class="form-control" placeholder="0987654321" aria-describedby="helpId">
+                <label for="addressStudent" class="form-label">Dirección</label>
+                <input type="text" name="address" id="addressStudent" class="form-control" placeholder="Solanda" aria-describedby="helpId">
+                <label for="registrationCodeStudent" class="form-label">Número de Matricula</label>
+                <input type="text" name="registration" id="registrationCodeStudent" class="form-control" placeholder="777777" aria-describedby="helpId">  
+                <label for="levelStudent" class="form-label">Nivel</label>
+                <input type="text" name="level" id="levelStudent" class="form-control" placeholder="Tercer Semestre" aria-describedby="helpId">
+                </div>
+            </div>
+            <div class="card-footer text-muted">
+                <center><button class="btn btn-primary" onclick="addStudent()">Agregar</button></center>
+            </div>
+        </div>
+        <hr>
+        <div class="card">
+            <div class="card-header">
+              <center><h3>Profesor</h3></center>
+            </div>
+            <hr>
+            <div class="card-body">
+              <div class="mb-3">
+                <label for="nameTeacher" class="form-label">Nombre</label>
+                <input type="text" name="nameTeacher" id="nameTeacher" class="form-control" placeholder="Nombre del Profesor" aria-describedby="helpId">
+                <label for="identificationTeacher" class="form-label">Cédula</label>
+                <input type="text" name="identificationTeacher" id="identificationTeacher" class="form-control" placeholder="0987654321" aria-describedby="helpId">
+                <div class="mb-3">
+                  <label for="carrerTeacher" class="form-label">Carrera</label>
+                  <!-- <select class="form-select form-select-sm" name="carrerTeacher" id="carrerTeacher">
+                    <option value="turismo">Turismo</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="software">sowtware</option>   
+                  </select>                  -->
+                  <input type="text" name="carrerTeacher" id="carrerTeacher" class="form-control" placeholder="Nombre de la Carrera" aria-describedby="helpId">
+                  <div class="mb-3">
+                    <label for="addressTeacher" class="form-label">Direccion</label>  
+                    <input type="text" name="addressTeacher" id="addressTeacher" class="form-control" placeholder="Av. Los Angeles" aria-describedby="helpId">
+                  </div>
+                </div>
+                <label for="titleTeacher" class="form-label">Titulo</label>
+                <input type="text" name="titleTeacger" id="titleTeacher" class="form-control" placeholder="Titulo" aria-describedby="helpId">
+                <label for="signatureTeacher" class="form-label">Asignatura</label>
+                  <!-- <select class="form-select form-select-sm" name="signatureTeacher" id="signatureTeacher">
+                    <option value="Interfaces">Interfaces</option>
+                    <option value="Programacion">Programacion</option>
+                    <option value="Metodologias">Metodologias</option>   
+                  </select> -->
+                <input type="text" name="signatureTeacher" id="signatureTeacher" class="form-control" placeholder="Asignatura que imparte" aria-describedby="helpId">
+                </div>
+                </div>
+                <div class="card-footer text-muted">
+                  <center><button class="btn btn-primary"onclick="addTeacher()">Agregar</button></center>
+              </div>
+            </div>
+            <hr>
+            <div class="card">
+              <div class="card-header">
+                  <center><h3>CURSOS</h3> </center>
+              </div>
+              <hr>
+              <div class="card-body">
+                  <div class="mb-3">
+                    <label for="areaCourse" class="form-label">Area</label>
+                    <input type="text" name="area" id="areaCourse" class="form-control" placeholder="Ingrese su Area" aria-describedby="helpId">
+                    <label for="nameCourse" class="form-label">Nombre del Curso:</label>
+                    <input type="text" name="name" id="nameCourse" class="form-control" placeholder="Ingrese el nombre del curso" aria-describedby="helpId"> 
+                  </div>
+              </div>
+              <div class="card-footer text-muted">
+                  <center><button class="btn btn-primary"onclick="addCourse()">Agregar</button></center>
+              </div>
+          </div>
+        </div>
+    </div>
+    <br>
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script>let exports = {};</script>
+  <script src="dist/main.js"></script>
+</body>
+</html>
