@@ -2,9 +2,22 @@
 // import { Student} from "./entities/student"
 // import { Teacher } from "./entities/teacher"
 Object.defineProperty(exports, "__esModule", { value: true });
+//import  {Course} from "./entities/course";
 let students = [];
 let teachers = [];
 let courses = [];
+var Course;
+(function (Course) {
+    Course["turismo"] = "Turismo";
+    Course["marketing"] = "Marketing";
+    Course["software"] = "Software";
+})(Course || (Course = {}));
+var Area;
+(function (Area) {
+    Area["typescript"] = "Typescript";
+    Area["php"] = "PHP";
+    Area["angular"] = "Angular";
+})(Area || (Area = {}));
 var Carrera;
 (function (Carrera) {
     Carrera["turismo"] = "Turismo";
@@ -36,15 +49,15 @@ function addTeacher() {
     console.log(teachers);
     console.table(teachers);
 }
-function addCourse() {
-    let currentCourse = {
-        area: readHtml("areaCourse"),
-        name: readHtml("nameCourse"),
-    };
-    courses.push(currentCourse);
-    console.log(courses);
-    console.table(courses);
-}
+// function addCourse(){
+// let currentCourse: Course = {
+//     area: readHtml("areaCourse"),
+//     name:  readHtml("nameCourse"),
+// }
+//     courses.push(currentCourse);
+//     console.log(courses);
+//     console.table(courses);
+// }
 function readHtml(id) {
     return document.getElementById(id).value;
 }

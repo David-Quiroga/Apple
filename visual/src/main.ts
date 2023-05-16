@@ -37,12 +37,23 @@
 //     console.table(teacher)
 // }
 
-import{Student} from "./entities/student"
-import{Teacher} from "./entities/teacher"
-import {Course} from "./entities/course";
+import  {Student} from "./entities/student"
+import  {Teacher} from "./entities/teacher"
+//import  {Course} from "./entities/course";
 let students: Student[] = [];
 let teachers: Teacher[] = [];
 let courses: Course[] = [];
+
+enum Course {
+    turismo     = "Turismo",
+    marketing   = "Marketing",
+    software    = "Software",
+}
+enum Area {
+    typescript  = "Typescript",
+    php         = "PHP",
+    angular     = "Angular",
+}
 enum Carrera {
     turismo = "Turismo",
     marketing = "Marketing",
@@ -73,15 +84,15 @@ let currentTeacher: Teacher = {
     console.log(teachers);
     console.table(teachers);
 }
-function addCourse(){
-let currentCourse: Course = {
-    area: readHtml("areaCourse"),
-    name:  readHtml("nameCourse"),
-}
-    courses.push(currentCourse);
-    console.log(courses);
-    console.table(courses);
-}
+// function addCourse(){
+// let currentCourse: Course = {
+//     area: readHtml("areaCourse"),
+//     name:  readHtml("nameCourse"),
+// }
+//     courses.push(currentCourse);
+//     console.log(courses);
+//     console.table(courses);
+// }
 function readHtml(id: string): string{
     return (<HTMLInputElement> document.getElementById(id)).value;
 }
